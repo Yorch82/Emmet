@@ -44,5 +44,44 @@
         <li>Elemento</li>
         <li>Elemento</li>
     </ul>
+    <!-- 1. Tablas -->
+    <!-- table>tr>td*3 -->
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- 2. Tablas y agrupaciones -->
+    <!-- table>(tr>th*3)+tr>td*3 -->
+    <table>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- 1. Clases and Id -->
+    <!-- table.super-table>tr>td*3.table-data -->
+    <table class="super-table">
+        <tr>
+            <td class="table-data"></td>
+            <td class="table-data"></td>
+            <td class="table-data"></td>
+        </tr>
+    </table>
+    <!-- 2. Formularios -->
+    <!-- form:get[action=/action_page.php]>label[for=fname]{First name:}+input[type=text id=fname name=fname]+input[type=submit value=Submit]  -->
+    <form action="/action_page.php" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
